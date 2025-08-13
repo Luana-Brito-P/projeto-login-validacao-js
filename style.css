@@ -21,7 +21,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* TEXTO */
@@ -34,15 +34,16 @@
     gap: 20px;
 }
 
-img{
+img {
     height: auto;
     width: 100%;
     display: block;
 }
-article#text {
 
+article#text {
     color: var(--Blue-800);
     margin: 20px;
+    height: 250px;
     text-align: justify;
 }
 
@@ -55,11 +56,12 @@ h1 {
 
 ul {
     list-style: url(assets/images/icon-list.svg);
-    margin: 20px;
+    margin: 0px 20px;
+
 }
 
 li {
-    margin: 20px 5px;
+    margin: 20px 10px;
 }
 
 /* FORMULÁRIO */
@@ -74,7 +76,7 @@ label {
 
 input#email {
     height: 15px;
-    width: 380px;
+    width: 330px;
     padding: 20px;
     border: 1px solid var(--Grey);
     border-radius: 8px;
@@ -90,8 +92,8 @@ button {
     background-color: var(--Blue-800);
 
     height: 55px;
-    width: 424px;
-    padding: 10px;
+    width: 370px;
+    padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
 
