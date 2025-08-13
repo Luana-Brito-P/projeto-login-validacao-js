@@ -34,7 +34,11 @@
     gap: 20px;
 }
 
-
+img{
+    height: auto;
+    width: 100%;
+    display: block;
+}
 article#text {
 
     color: var(--Blue-800);
