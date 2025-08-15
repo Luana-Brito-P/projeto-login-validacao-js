@@ -1,13 +1,13 @@
-@charset "UTF-08";
+@charset "UTF-8";
 
 @font-face {
     font-family: 'Roboto';
-    src: url(assets/fonts/Roboto-Regular.ttf) format(truetype);
+    src: url(../assets/fonts/Roboto-Regular.ttf) format("truetype");
 }
 
 @font-face {
     font-family: 'Roboto-Bold';
-    src: url(assets/fonts/Roboto-Bold.ttf) format(truetype);
+    src: url(../assets/fonts/Roboto-Bold.ttf) format("truetype");
 }
 
 :root {
@@ -21,43 +21,47 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto';
-    font-size: 18px;
+    font-size: 25px;
 }
 
 /* TEXTO */
 #container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    overflow: auto;
+   
 }
 
+picture{
+    width: 100%;
+}
 img {
+    display: block;
     height: auto;
     width: 100%;
-    display: block;
+   
 }
 
 article#text {
     color: var(--Blue-800);
-    margin: 20px;
-    height: 250px;
+    margin: 30px 0px;
+    line-height: 45px;
     text-align: justify;
+   
 }
 
 h1 {
     font-family: 'Roboto-Bold';
     font-size: 2.3em;
-    color: var(--Blue-800);
     margin-bottom: 20px;
 }
 
 ul {
-    list-style: url(assets/images/icon-list.svg);
+    list-style: url(../assets/images/icon-list.svg);
     margin: 0px 20px;
-
 }
 
 li {
@@ -66,7 +70,7 @@ li {
 
 /* FORMULÁRIO */
 div#form {
-    margin: 0px 20px;
+    margin: 35px 20px;
 }
 
 label {
@@ -75,12 +79,11 @@ label {
 }
 
 input#email {
-    height: 15px;
-    width: 330px;
+    height: 25%;
+    width: 90%;
     padding: 20px;
     border: 1px solid var(--Grey);
     border-radius: 8px;
-
 
     margin-top: 10px;
     margin-bottom: 25px;
@@ -91,10 +94,11 @@ button {
     color: var(--White);
     background-color: var(--Blue-800);
 
-    height: 55px;
-    width: 370px;
-    padding: 20px;
+    width: 98%;
+    padding: 22px;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    border: none;
+    cursor: pointer;
 
 }
