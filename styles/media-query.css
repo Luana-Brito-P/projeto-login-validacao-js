@@ -26,7 +26,7 @@
         max-width: 700px;
         height: auto;
         padding: 18px;
-        gap: 0; /* remove qualquer espaço entre os filhos */
+        gap: 5px; /*espaço entre os filhos */
     }
 
     article#text{
@@ -36,7 +36,7 @@
         font-size: 1em;
         text-align: justify;
         line-height: 20px;
-        margin: 0px;
+        margin: 0px ;
     }
 
     

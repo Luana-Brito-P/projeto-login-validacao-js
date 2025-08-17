@@ -82,7 +82,7 @@ label {
 }
 span {
     display: none;
-    color: #e5574d;
+    color: hsl(4, 100%, 67%);
     margin-left: 100px;
 }
 
@@ -104,7 +104,7 @@ input#email::placeholder{
 }
 
 input.red-placeholder::placeholder{
-    color: #e5574d;
+    color:hsl(4, 100%, 67%);
 }
 
 button {
