@@ -71,3 +71,20 @@
         padding: 20px;
     }
 }
+
+@media screen and (max-height: 525px){
+    #container{
+        flex-direction: column;
+        padding: 0;
+    }
+    article#text{
+        height: 300px;
+        margin: 20px
+    }
+
+    span#error{
+       margin-left: 160px;
+    }
+
+   
+}
