@@ -1,75 +1,73 @@
 @media screen and (min-width: 750px) {
+   
+    *{
+        box-sizing: border-box;
+    }
 
-    body {
+    body{
+        background-color: hsl(235, 18%, 26%);
         width: 100vw;
         height: 100vh;
-        font-size: 18px;
-
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: hsl(234, 29%, 20%);
     }
 
-    #container {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row-reverse;
-        width: 80vw;
-        max-width: 980px;
-        height: 80vh;
-        padding: 20px;
-        align-items: stretch;
-        overflow: hidden;
-
+    section{
         background-color: white;
         border-radius: 15px;
     }
 
-    picture {
-        flex: 1;
-        height: auto;
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 15px;
-    }
-
-    article#text {
-        flex: 1;
-        padding: 30px;
+    #container{
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 10px;
-
+        flex-direction: row-reverse;
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        padding: 18px;
+        gap: 0; /* remove qualquer espaço entre os filhos */
     }
 
+    article#text{
+        flex: 1 1 50%; 
+       /* significa: cresce 1, encolhe 1, tamanho base 50% → agora o texto e a imagem ocupam exatamente metade do container. */
+        height: auto;
+        font-size: 1em;
+        text-align: justify;
+        line-height: 20px;
+        margin: 0px;
+    }
 
-    li {
+    
+    picture{
+        flex: 1 1 50%;
+        border-radius: 20px;
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    div#form{
         margin: 10px;
     }
 
-    div#form {
-        margin: 10px;
+    span{
+        font-size: 14px;
+        margin-left: 60px;
+    }
+    input#email{
+        height: 30px;
+        padding: 20px;
     }
 
-    input#email {
-        height: 50px;
-        width: 100%;
-        box-sizing: border-box;
+    input#email::placeholder{
+        font-size: 1em;
     }
 
-    button {
-        font-size: 20px;
-        height: 60px;
-        width: 100%;
-        margin-bottom: 0;
+    button{
+        height: 30px;
+        font-size: 15px;
+        padding: 20px;
     }
-
-
 }
