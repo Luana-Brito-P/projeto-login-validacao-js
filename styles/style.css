@@ -59,15 +59,18 @@ h1 {
     margin-bottom: 20px;
 }
 
-ul {
-    list-style: url(../assets/images/icon-list.svg);
-    margin: 0px 20px;
-}
-
 li {
-    margin: 20px 10px;
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    /* pra centralizar e espaçar o icon do li */
+     margin: 20px 10px;
 }
 
+li::before{
+    /* adicionando o icon antes do li */
+    content: url('../assets/images/icon-list.svg');
+}
 /* FORMULÁRIO */
 div#form {
     margin: 35px 20px;
@@ -100,6 +103,10 @@ input#email::placeholder{
     font-size: 22px;
 }
 
+input.red-placeholder::placeholder{
+    color: #e5574d;
+}
+
 button {
     font-family: 'Roboto-Bold';
     font-size: 22px;
@@ -109,6 +116,11 @@ button {
     width: 95%;
     padding: 18px;
     border-radius: 8px;
+
+    /* Alinhando */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     border: none;
     cursor: pointer;
